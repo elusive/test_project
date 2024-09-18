@@ -1,6 +1,6 @@
 {
   "name": "test_project",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Test project directory for use in learning npm version command.",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,8 @@
     "url": "git@github.com:elusive/test_project.git"
   },
   "scripts": {
-      "generate:version": "echo 'export const version = \"'$npm_package_version'\";' > ./src/version.ts",
-      "prebuild": "npm run generate:version",
+    "generate:version": "echo 'export const version = \"'$npm_package_version'\";' > ./src/version.ts",
+    "prebuild": "npm run generate:version",
     "build": "webpack",
     "version": "echo 'this is from the custom script'",
     "start": "webpack --watch",
